@@ -1,0 +1,386 @@
+1	<!文档类型html >
+2 < html >
+3 <头>
+4	<!--网页安全防火墙-->	
+5 <元
+http-equiv="Content-Security-Policy"
+content = " default-src ' self '；脚本-src“self”；style-src“self”；object-src'none ' " >
+6 < meta http-equiv = " X-XSS-保护"
+content = " 1；模式=块">
+7 <元
+http-equiv="X-Content-Type-Options" content="nosniff">
+8 <标题>我的网页〉/title >
+9 </head >
+10 <正文
+11	你的网页内容	
+12 </body >
+13 </html >
+<!文档类型html >
+< html lang="zh-CN " >
+< head >
+< meta charset="UTF-8 " >
+< meta name = " viewport " content = " width =设备宽度，初始比例=1.0，最大比例=1.0，用户可缩放=否">
+<标题>云盘资源社 百度夸克大学学院迅雷 全网网盘资源分享</title >
+< meta name="description" content= "云盘资源社,免费分享优质电影、剧集、动漫、4K影视、书籍资料、学习教程,百度夸克大学学院迅雷四网盘多备份">
+< meta name="keywords" content= "网盘资源,夸克网盘,百度网盘，UC网盘,迅雷网盘，4K影视,剧集动漫">
+<风格>
+* {边距:0；填充:0；框大小:边框-框；字体系列:“方平SC”、“微软雅黑”，无衬线；}
+body{background:#f5f7fa;color:#333;padding:0;margin:0;}
+.container{max-width:900px;margin:0 auto;background:#fff;min-height:100vh;}
+
+/* 顶部网站头部 */
+.site-header{
+    padding:20px 15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+.site-header h1{font-size:26px;color:#1677ff;margin-bottom:8px;}
+.site-header p{color:#666;font-size:14px;}
+
+/* 顶部数据栏：主题/帖子/用户 */
+.stat-bar{
+    display:flex;
+    justify-content:space-around;
+    padding:12px 0;
+    background:#f8f9fa;
+字体大小:14px
+颜色:# 555；
+border-bottom:1px solid # eee；
+}
+
+/* 蓝色公告栏（和你截图完全一致） */
+.notice-bar{
+    background:#e6f4ff;
+    color:#1677ff;
+    padding:16px 18px;
+    line-height:1.7;
+    font-size:15px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+.notice-close{
+    position:absolute;
+    right:15px;top:12px;
+    color:#888;
+    text-decoration:none;
+}
+
+/* 最新/精华/新帖 导航栏 */
+.tab-nav{
+    display:flex;
+    border-bottom:1px solid #eee;
+}
+.tab-nav a{
+    flex:1;
+    text-align:center;
+    padding:14px 0;
+    text-decoration:none;
+    color:#666;
+    font-size:16px;
+    font-weight:500;
+}
+.tab-nav a.active{
+    color:#1677ff;
+    border-bottom:3px solid #1677ff;
+}
+
+/* 帖子列表 主区域 */
+.post-list{padding:10px 15px;}
+.post-item{
+    padding:14px 12px;
+    border-bottom:1px solid #f0f0f0;
+    display:flex;
+    gap:12px;
+}
+/* 左侧头像 */
+.post-avatar{
+    width:44px;height:44px;
+    border-radius:50%;
+    background:#eee;
+    flex-shrink:0;
+    overflow:hidden;
+}
+.post-avatar img{width:100%;height:100%;object-fit:cover;}
+/* 右侧帖子内容 */
+.post-content{flex:1;}
+.post-title{
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:6px;
+}
+.post-title a{color:#222;text-decoration:none;}
+.post-tag-new{
+    display:inline-block;
+    background:#ff4d4f;color:#fff;
+    font-size:12px;padding:2px 6px;border-radius:6px;margin-left:6px;
+}
+.post-info{
+    font-size:12px;color:#888;
+}
+/* 网盘标签：夸克/百度/UC/迅雷 */
+.pan-tag{
+    display:inline-block;
+    font-size:12px;padding:2px 5px;border-radius:4px;margin:0 2px;
+}
+.tag-bd{background:#1677ff;color:#fff;}
+.tag-qk{background:#ff7d00;color:#fff;}
+.tag-uc{background:#00b42a;color:#fff;}
+.tag-xl{background:#9254de;color:#fff;}
+
+/* 底部版权 */
+.footer{
+    text-align:center;
+    padding:25px 15px;
+    font-size:12px;color:#999;
+    border-top:1px solid #eee;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- 网站头部 -->
+    <div class="site-header">
+        <h1>云盘资源社</h1>
+        <p>专注免费分享全网网盘资源｜百度｜夸克｜UC｜迅雷</p>
+    </div>
+
+    <!-- 数据统计栏 -->
+    <div class="stat-bar">
+        <span>主题 416118</span>
+        <span>帖子 38577</span>
+        <span>用户 6898</span>
+    </div>
+
+    <!-- 蓝色公告栏 -->
+    <div class="notice-bar">
+        云盘资源社专注免费分享网盘资源，优质电影、剧集、动漫、4K电影、4K电视剧、书籍资料、学习教程、音乐音频应有尽有，更多内容等待你来发掘
+        <a href="#" class="notice-close">×</a>
+    </div>
+
+    <!-- 最新/精华/新帖 标签页 -->
+    <div class="tab-nav">
+        <a href="#" class="active">最新</a>
+        <a href="#">精华</a>
+        <a href="#">新帖</a>
+    </div>
+
+    <!-- 超多资源帖子 · 共25条，直接用 -->
+    <div class="post-list">
+        <!-- 1 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/40/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【特工家族】【全12集】【不易和谐】【韩语中字】【1080】【纯净版】</a><span class="post-tag-new">新</span></div>
+                <div class="post-info">剧集区 · 桃桃 · 1分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/40/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【人浮于爱(2025)】【全14集】【4K高码】【国语中字】【类型：剧情/爱情】</a><span class="post-tag-new">新</span></div>
+                <div class="post-info">剧集区 · 桃桃 · 5分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1025/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【泰剧】诡计多端/又名:千方百计爱上你(2015) 1080p 泰语+国语两版中字 全14集 20g</a><span class="post-tag-new">新</span></div>
+                <div class="post-info">剧集区 · 叶子hen慌 · 6分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1035/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【忘我星途LupaDaratan(2025)】【1080P/超清】【泰语中字】全10集</a><span class="post-tag-new">新</span></div>
+                <div class="post-info">泰剧区 · 小泰迷 · 8分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1045/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【2025最新院线电影合集】4K超清无删减 20部合集 国语中字</a><span class="post-tag-new">新</span></div>
+                <div class="post-info">电影区 · 大片控 · 10分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1055/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【国产热门短剧合集】2025全集完整版 无广告 无删减 100部打包</a></div>
+                <div class="post-info">短剧区 · 短剧达人 · 12分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1065/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【日漫全集合集】海贼王/火影/鬼灭之刃 高清全集 无删减</a></div>
+                <div class="post-info">动漫区 · 漫迷 · 15分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1075/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【韩综全集】Running Man 全集超清 韩语中字 持续更新</a></div>
+                <div class="post-info">综艺区 · 韩综控 · 18分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1085/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【全网完结小说合集】都市/玄幻/言情/悬疑 1000本TXT打包</a></div>
+                <div class="post-info">小说区 · 书虫 · 20分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1095/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【考研全套资料】公共课+专业课 真题+网课+讲义 2026最新版</a></div>
+                <div class="post-info">学习区 · 上岸党 · 22分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 11 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1105/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【自媒体剪辑素材】音效/转场/字幕模板/高清背景视频 全套打包</a></div>
+                <div class="post-info">素材区 · 剪辑师 · 25分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 12 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1115/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【电脑软件合集】办公/设计/装机必备 绿色破解版 无捆绑</a></div>
+                <div class="post-info">软件区 · 工具控 · 28分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 13 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1125/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【4K纪录片合集】国家地理/BBC 超清原声中字 50部全集</a></div>
+                <div class="post-info">纪录片区 · 纪录片迷 · 30分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 14 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1135/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【港剧经典全集】TVB老剧 高清修复版 国语粤语双版本</a></div>
+                <div class="post-info">港剧区 · 港剧迷 · 32分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 15 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1145/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【美剧高分合集】权力游戏/绝命毒师 全集4K超清 中英字幕</a></div>
+                <div class="post-info">美剧区 · 美剧达人 · 35分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 16 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1155/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【PPT模板大全】职场/学生/汇报/答辩 1000套免费模板打包</a></div>
+                <div class="post-info">模板区 · 办公达人 · 38分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 17 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1165/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【音乐无损合集】全网热门歌曲 无损FLAC 高品质打包</a></div>
+                <div class="post-info">音乐区 · 音乐爱好者 · 40分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 18 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1175/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【PS全套教程+素材】零基础到精通 网课+笔刷+插件 全套资源</a></div>
+                <div class="post-info">教程区 · 设计小白 · 42分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 19 -->
+< div class="post-item " >
+            <div class="post-avatar"><img src="https://picsum.photos/id/1185/44/44"></div>
+            <div class="post-content">
+                <div class="post-title"><a href="你的网盘链接">【2025高考全套资料】真题+网课+知识点总结 高三必备</a></div>
+                <div class="post-info">高考区 · 高三党 · 45分钟前 <span class="pan-tag tag-qk">夸克</span><span class="pan-tag tag-bd">百度</span><span class="pan-tag tag-uc">UC</span><span class="pan-tag tag-xl">迅雷</span></div>
+            </div>
+        </div>
+        <!-- 20 -->
+        <div class="post-item">
+            <div class="post-avatar"><img src="https://picsum.photos/id/1195/44/44"></div>
+            <div class="post-content">
+< div class="post-title"><a href= "你的网盘链接">【古风动漫合集】国漫精品4K超清 全集无删减</a></div >
+< div class="post-info " >国漫区 国漫迷 48分钟前< span class="pan-tag tag-qk " >夸克< span class="pan-tag tag-bd " >百度统一通信迅雷</span></div >
+</div >
+</div >
+        <!-- 21 -->
+< div class="post-item " >
+< div class = " post-avatar " > < img src = " https://picsum . photos/id/1205/44/44 " > </div >
+< div class= "发布内容">
+< div class="post-title"><a href= "你的网盘链接">【健身全套教程】减脂/增肌 视频课程+计划 全套打包</a></div >
+< div class="post-info " >健身区 健身达人 50分钟前< span class="pan-tag tag-qk " >夸克< span class="pan-tag tag-bd " >百度统一通信迅雷</span></div >
+</div >
+</div >
+        <!-- 22 -->
+< div class="post-item " >
+< div class = " post-avatar " > < img src = " https://picsum .photos/id/1215/44/44 " > </div >
+< div class= "发布内容">
+< div class="post-title"><a href= "你的网盘链接">【儿童早教动画】小猪佩奇/汪汪队 全集超清 国语版</a></div >
+< div class="post-info " >早教区 宝妈 52分钟前< span class="pan-tag tag-qk " >夸克< span class="pan-tag tag-bd " >百度统一通信迅雷</span></div >
+</div >
+</div >
+        <!-- 23 -->
+< div class="post-item " >
+< div class = " post-avatar " > < img src = " https://picsum。photos/id/1225/44/44 " > </div >
+< div class= "发布内容">
+< div class="post-title"><a href= "你的网盘链接">【日语学习全套】网课+教材+真题+听力 零基础入门</a></div >
+< div class="post-info " >语言区 日语爱好者 55分钟前< span class="pan-tag tag-qk " >夸克< span class="pan-tag tag-bd " >百度统一通信迅雷</span></div >
+</div >
+</div >
+        <!-- 24 -->
+< div class="post-item " >
+< div class = " post-avatar " > < img src = " https://picsum .photos/id/1235/44/44 " > </div >
+< div class= "发布内容">
+< div class="post-title"><a href= "你的网盘链接">【2025热门泰剧合集】最新播出 全集超清 中字完整版</a></div >
+< div class="post-info " >泰剧区 泰剧迷 58分钟前< span class="pan-tag tag-qk " >夸克< span class="pan-tag tag-bd " >百度统一通信迅雷</span></div >
+</div >
+< div class="post-title"><a href= "你的网盘链接">【健身全套教程】减脂/增肌 视频课程+计划 全套打包</a></div >
+        <!-- 25 -->
+< div class="post-item " >
+< div class = " post-avatar " > < img src = " https://picsum。photos/id/1245/44/44 " > </div >
+< div class= "发布内容">
+< div class="post-title"><a href= "你的网盘链接">【全网热门爽文短剧】全集完整版 无广告无删减 持续更新</a></div >
+< div class="post-info " >短剧区 短剧分享60分钟前< span class="pan-tag tag-qk " >夸克< span class="pan-tag tag-bd " >百度统一通信迅雷</span></div >
+</div >
+</div >
+
+</div >
+
+    <!-- 页脚 -->
+< div class="footer " >
+云盘资源社 全网网盘资源分享 百度夸克大学学院迅雷四网盘备份
+</div >
+</div >
+</body >
+</html >
+< div class="post-item " >
+< div class = " post-avatar " > < img src = " https://picsum .photos/id/1245/44/44 " > </div >
+< div class= "发布内容">
+< div class="post-title"><a href= "你的网盘链接">【这里改资源名字】</a><span class="post-tag-new " >新</span></div >
+< div class="post-info " >分区 昵称 时间< span class="pan-tag tag-qk " >夸克< span class="pan-tag tag-bd " >百度统一通信迅雷</span></div >
+</div >
+</div >
